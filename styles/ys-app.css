@@ -1,0 +1,270 @@
+/*
+* Contains main application styles
+*/
+header>bar>.logoSection{
+    width: 10em;
+    height: 10em;
+    margin-left: 12em;
+    display: inline-block;
+    margin-top: -3em;
+    position: relative;
+}
+header>bar>.logoSection>logo {
+    width: 100%;
+    height:100%;
+    display: block;
+    background: url(https://assets.yemeksepeti.com/assets/Images/logo.png) no-repeat center;
+}
+header>bar{
+    height: 5em;
+    position: relative;
+    background: #ab0012;
+    display: block;
+    margin-top: 4em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+header>bar>.menuSection{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 5em;
+    position: absolute;
+}
+header>bar>.menuSection>.searchBox{
+    display: block;
+    width: 40em;
+    height: 1.5em;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+header>bar>.menuSection>.searchButton{
+    overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 2.6em;
+        margin-top: -2.6em;
+        width: 5em;
+        color: #000;
+        text-transform: uppercase;
+        background: #fec13d;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+header>bar>.menuSection>.searchButton:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #fec13d transparent;
+    top: 0.8em;
+    left: -6px;
+}
+header>bar>.menuSection>.searchButton:before{
+    border-right-color: #fec13d;
+}
+header>bar>.menuSection>.searchButton:hover{
+    background-color: #ff7208;
+    color: #eee;
+}
+header>bar>.menuSection>.searchButton:hover:before{
+    border-right-color: #ff7208;
+}    
+content.topMargined{
+    margin-top: -11em;
+    display: block;
+}
+content>.mainContainer{
+    width: 60%;
+    margin-left: 26em;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+    margin-top: -7em;
+    top: 27em;
+    position: absolute;
+}
+content>.mainContainer>.title{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: block;
+}
+content>.mainContainer>.info{
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 3px;
+}
+header>bar>.menuSection>.searchContainer{
+    background: #fff;
+    border: #eee 0.2em solid;
+    width: 32em;
+    position: relative;
+    z-index: 1;
+}
+header>bar>.menuSection>.searchContainer>ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    margin-bottom: 0em;
+}
+header>bar>.menuSection>.searchContainer>ul>li{
+    padding: 0.3em;
+    padding-left: 1em;
+}
+header>bar>.menuSection>.searchContainer>ul>li.title{
+    font-weight: bold;
+    background: #eee;   
+    border-bottom: #eee 0.1em solid;
+}
+header>bar>.menuSection>.searchContainer>ul>li.option{
+    border-bottom: #eee 0.1em solid;
+    cursor: pointer;
+}
+header>bar>.menuSection>.searchContainer>ul>li.option:hover{
+    background-color: #ff7208;
+    color: #eee;
+}
+content>.ys-basket{
+    font-family: Verdana, Geneva, sans-serif;
+    width: 17em;
+}
+content>.ys-basket .header {
+    padding: 10px 11px;
+    background-color: #ac000b;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    margin-top: 12px;
+}
+content>.ys-basket .basketItems {
+    font-weight: 500;
+    font-size: 10px;
+    padding: 13px 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+content>.mainContainer>category{
+    width: 100%;
+    display: block;
+    border: .2em solid #f3f3f3;
+    padding: 12px 0 12px 12px;
+    margin: 0 0 15px;
+}
+content>.mainContainer>category>productList>product{
+    width: 100%;
+    display: block;
+    margin-top: 2em;
+}
+content>.mainContainer>category>productList>product>.count{
+    width: 2.5em;
+    text-align: left;
+    padding: 0.3em;
+    height: 1em;
+    border-radius: .2em;
+    border: .1em solid;
+}
+content>.mainContainer>category>productList>product>.btnAddToBasket{
+    background-color: #48912a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2em;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 15pt;
+    margin-left: 0.2em;
+}
+content>.mainContainer>category>productList>product>.btnAddToBasket:hover{
+    background-color: #10802a;
+}
+content>.mainContainer>category>productList>product>.displayName{
+    color: #ff6508;
+    font-weight: bold;
+    margin-left: 1em;
+    position: absolute;
+}
+content>.mainContainer>category>productList>product>.description{
+    display: block;
+    margin-left: 7.6em;
+    margin-top: -.5em;
+    width: 40em;
+}
+content>.mainContainer>category>productList>product>.price{
+    float: right;
+    margin-top: -3em;
+    color: #ff6508;
+    font-weight: bold;
+    border: 1px solid transparent;
+    margin-right: 1em;
+}
+content>.mainContainer>category>categoryName{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.basketItems>products>product>.displayName{
+    color: #ff6508;
+    display: inline-block;
+    width: 10.5em;
+    font-weight: bold;
+}
+.basketItems>products>product>.count{
+    width: 2.5em;
+    margin-left: 1em;
+    border-radius: .2em;
+    border: .1em solid;
+    padding-left: .1em;
+    position: absolute;
+}
+.basketItems>products>product{
+    display: block;
+    margin-top: 2em;
+}
+.basketItems>products>product>.price{
+    margin-left: 7em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: .3em;
+}
+.basketItems>products>.totalPrice{
+    float: right;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 12pt;
+    border: 1px #eee solid;
+    width: 14.2em;
+    text-align: right;
+    padding: 1em;
+}
+.basketItems>products>product>.btnRemove{
+    background: #ab0012;
+    border: 0;
+    color: #fff;
+    border-radius: .2em;
+    cursor: pointer;
+    font-size: 12pt;
+    float: right;
+}

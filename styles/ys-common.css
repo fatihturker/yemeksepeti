@@ -1,0 +1,10 @@
+/*
+* Contains common application styles
+*/
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+.invisible{
+    display: none;
+}

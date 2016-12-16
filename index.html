@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/JavaScript" src="scripts/namespaces.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/dataProvider.menuData.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/dataProvider.restoranData.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/utility.js"> </script>       
+    <script type="text/JavaScript" src="scripts/models/product.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantCuisines.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantDeliveryArea.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantDiscount.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantPaymentMethod.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantWorkingHour.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantBase.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantMenu.js"></script>
+    <script type="text/JavaScript" src="scripts/models/restaurantMainInfo.js"></script>
+    <script type="text/JavaScript" src="scripts/models/resultBase.js"></script>
+    <script type="text/JavaScript" src="scripts/models/resultOfArrayOfRestaurantMenu.js"></script>
+    <script type="text/JavaScript" src="scripts/models/resultOfRestaurantMainInfo.js"></script>
+    <script type="text/JavaScript" src="scripts/templates/template.searchContainer.js"></script>
+    <script type="text/JavaScript" src="scripts/templates/template.productList.js"></script>
+    <script type="text/JavaScript" src="scripts/templates/template.basket.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/dataAccess.restaurantMenu.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/dataAccess.restaurantMainInfo.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/businessLogic.restaurantMenu.js"></script>
+    <script type="text/JavaScript" src="scripts/controllers/businessLogic.restaurantMainInfo.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-containers.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-app-main.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-basket.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-paging.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-search.js"></script>
+    <script type="text/JavaScript" src="scripts/ys-app.js"></script>  
+    <link rel="stylesheet" type="text/css" href="styles/ys-common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/ys-containers.css" />
+    <link rel="stylesheet" type="text/css" href="styles/ys-app.css" />
+    <title>Yemeksepeti Ön Değerlendirme</title>
+</head>
+<body>
+    <main onclick="currentYSApp.events.pagingEvents.checkSearchContainerStatus(event)">
+        <header>
+            <bar>       
+                <div class="logoSection">
+                    <logo></logo>
+                </div>
+                <div class="menuSection">
+                    <input class="searchBox" placeholder="Yemek, mutfak veya restoran arayın." type="text" autocomplete="off" spellcheck="false" onkeyup="currentYSApp.events.searchEvents.loadSearchContainer(this)"/>
+                    <button class="searchButton">Ara</button>
+                    <div class="searchContainer invisible" id="SearchContainer">
+                    </div>
+                </div>
+            </bar>        
+        </header>
+
+        <content class="centered topMargined">
+            <div class="ys-basket">
+                <div class="header">
+                    <span>YEMEK SEPETİM</span>
+                    
+                </div>
+                <div class="basketItems" id="BasketItems">
+                        <b>Sepetiniz henüz boş.</b>
+                </div>
+            </div>
+            <div class="mainContainer" id="MainContainer">
+                <span class="title">
+                    Kredi kartınız bizi hiç ilgilendirmiyor!
+                </span>
+                <p class="info">
+                    Siparişlerinizi en doğru, en hızlı ve en kolay şekilde alıyor, ilgili restorana eksiksiz ve anında iletiyoruz. Kredi kartı, güvenlik sorunu yok. Siparişinizi <b>hiçbir ekstra ücret ödemeden</b> verin, <b>10-45</b> dakika (restoranın ortalama gönderim süresi) içerisinde yemeğiniz elinizde olsun.
+                </p>
+            </div>
+        </content>
+    </main>
+</body>
+</html>

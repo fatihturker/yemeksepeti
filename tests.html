@@ -1,0 +1,38 @@
+<html>
+    <head>     
+        <script type="text/JavaScript" src="scripts/namespaces.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/dataProvider.menuData.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/dataProvider.restoranData.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/utility.js"> </script>       
+        <script type="text/JavaScript" src="scripts/models/product.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantCuisines.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantDeliveryArea.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantDiscount.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantPaymentMethod.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantWorkingHour.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantBase.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantMenu.js"></script>
+        <script type="text/JavaScript" src="scripts/models/restaurantMainInfo.js"></script>
+        <script type="text/JavaScript" src="scripts/models/resultBase.js"></script>
+        <script type="text/JavaScript" src="scripts/models/resultOfArrayOfRestaurantMenu.js"></script>
+        <script type="text/JavaScript" src="scripts/models/resultOfRestaurantMainInfo.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/dataAccess.restaurantMenu.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/dataAccess.restaurantMainInfo.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/businessLogic.restaurantMenu.js"></script>
+        <script type="text/JavaScript" src="scripts/controllers/businessLogic.restaurantMainInfo.js"></script>
+        
+        <script type="text/JavaScript" src="scripts/tests/restaurantMenu_products.js"></script>
+        <script type="text/JavaScript" src="scripts/tests/restaurantMainInfo.js"></script>
+    </head>
+    <body>
+        <script>
+            (function() {
+                var restaurantMenu_product_testScenarios = new YS.Tests.DataRead.RestaurantMenu_Product();
+                restaurantMenu_product_testScenarios.test_restaurantMenu_product_DataRead();
+
+                var restaurantMainInfo_testScenarios = new YS.Tests.DataRead.RestaurantMainInfo();
+                restaurantMainInfo_testScenarios.test_restaurantMainInfo_DataRead();
+            })();
+        </script>      
+    </body>
+</html>
